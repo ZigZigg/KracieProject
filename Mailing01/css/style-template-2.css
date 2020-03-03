@@ -1,0 +1,111 @@
+#template-2 #top-content__header-text{
+    padding: .5rem 0;
+
+}
+#template-2 .top-content__main-text{
+    position: relative;
+}
+#img-person-2-1{
+    width: 9rem;
+    height: 12rem;
+    position: absolute;
+    left: -1rem;
+    bottom: -.5rem;
+}
+#img-person-2-2{
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    right: -.5rem;
+    bottom: -.5rem;
+}
+.btn__radius--orange{
+    width: 100%;
+    border-radius: 4rem;
+    padding: 1rem;
+    background-color: #ea5504;
+    margin-top: 3rem;
+}
+.btn__radius--orange p{
+    color: white;
+    text-align: center;
+}
+#template-2 .dialog-container__right .dialog-box{
+    float: right;
+    max-width: 39rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+#template-2 .dialog-container__right .dialog-box::before{
+    left: -3rem;
+}
+#template-2 .dialog-container__right .dialog-box::after{
+    left: -2.4rem;
+}
+#template-2 .dialog-container__right .dialog-box::before, #template-2 .dialog-container__right .dialog-box::after{
+    clip-path: polygon(0 50%, 100% 100%, 100% 0%, 0 50%);
+}
+.flex-content__unline{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+.flex-content__unline #konban{
+    width: 28rem;
+    height: 4.3rem;
+    margin-bottom: .7rem;
+}
+.text-bold--mediumXL{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.btn__small--orange{
+    background-color: #ff9900;
+    padding: .3rem 1.5rem;
+    border-radius: .6rem;
+    max-width: 14rem;
+    float: right;
+}
+#person-hand{
+    width: 15rem;
+    height: 24rem;
+    position: absolute;
+    left: 2rem;
+    top: 5rem;
+}
+#cat{
+    width: 40rem;
+    height: 10rem;
+    margin: auto;
+}
+.content-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+#template-2 .dialog-container__left .dialog-box::before{
+    right: -3rem;
+    height: 3rem;
+    width: 3rem;
+    transform: translateY(-0.6rem);
+}
+#template-2 .dialog-container__left .dialog-box::after{
+    right: -2.5rem;
+    height: 3rem;
+    transform: translateY(-0.6rem);
+}
+#template-2 .dialog-container__left .dialog-box::before, #template-2 .dialog-container__left .dialog-box::after{
+    top:65%
+}
+#btn-image-1{
+    height: 12rem;
+    width: 8rem;
+    z-index: 1;
+}
+#template-2 .btn--gradient__image{
+    flex-direction: row;
+    justify-content: space-between;
+}
