@@ -174,9 +174,9 @@ header img{
     margin-bottom: 3rem
 }
 .dialog-box{
-    padding: 1rem 1rem;
+    padding: 1rem 1.2rem;
     border: 0.2rem solid #f16120;
-    border-radius: 1rem;
+    border-radius: 2rem;
     position: relative;
     margin-top: 3rem;
     text-align: center;
@@ -213,7 +213,7 @@ header img{
     font-weight: bold;
     color:#333
 }
-.dialog-container img{
+.dialog-container #person-02{
     width: 14rem;
     height: 10.8rem;
     position: absolute;
@@ -513,11 +513,11 @@ header img{
 }
 @media screen and (max-width:480px){
     html{
-        font-size: 41%
+        font-size: 38%
     }
 }
 @media screen and (max-width:320px){
     html{
-        font-size: 32%
+        font-size: 31%
     }
 }
