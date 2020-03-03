@@ -62,8 +62,11 @@ header img{
     width: 100%;
     background-color: #fff;
 }
-#top-content__main-text{
+.top-content__main-text{
     text-align: center
+}
+#top-content__header-text .text-bold--small{
+    font-size: 2.4rem;
 }
 .text-content{
     font-size: 2.6rem;
@@ -71,7 +74,7 @@ header img{
     color:#333;
     position: relative;
 }
-#top-content__main-text .text-content::after, #top-content__main-text .flex-content-1::after{
+.top-content__main-text .text-content::after, .top-content__main-text .flex-content-1::after{
     content: "";
     position: absolute;
     bottom: -0.4rem;
@@ -80,30 +83,30 @@ header img{
     height: .4rem;
     background-color: #ff0000;
 }
-#top-content__main-text .flex-content-1{
+.top-content__main-text .flex-content-1{
     display: inline-block;
     margin-top: .5rem;
     position: relative;
 }
-#top-content__main-text .flex-content-1 span{
+.top-content__main-text .flex-content-1 span{
     font-size: 2.6rem;
     font-weight: bold
 }
-#top-content__main-text .flex-content-1 img{
+.top-content__main-text .flex-content-1 img{
     width: 20.4rem;
     height: 4rem;
     margin-bottom: -.8rem;
 }
-#top-content__main-text .flex-content-2{
+.top-content__main-text .flex-content-2{
     display: inline-block;
     margin-top: 2rem;
     position: relative;
 }
-#top-content__main-text .flex-content-2 span{
+.top-content__main-text .flex-content-2 span{
     font-size: 2.2rem;
     font-weight: bold;
 }
-#top-content__main-text .flex-content-2 img{
+.top-content__main-text .flex-content-2 img{
     width: 20rem;
     height: 3.4rem;
     margin-bottom: -0.7rem;
@@ -269,6 +272,10 @@ header img{
 }
 .text-bold--small{
     font-size: 2.4rem;
+    font-weight: bold
+}
+.text-bold--mini{
+    font-size: 2.6rem;
     font-weight: bold
 }
 .img-text{
