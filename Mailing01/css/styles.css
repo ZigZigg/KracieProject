@@ -684,6 +684,36 @@ header img{
 #template-3 .dialog-container__right .dialog-box::before, #template-3 .dialog-container__right .dialog-box::after{
     clip-path: polygon(0 50%, 100% 100%, 100% 0%, 0 50%);
 }
+
+/******************* Template 4 **********************/
+#img-person-4-2{
+    width: 9rem;
+    height: 11.5rem;
+    position: absolute;
+    left: 0;
+    bottom: -2rem;
+}
+#img-person-4-1{
+    width: 13rem;
+    height: 11rem;
+    position: absolute;
+    right: -1rem;
+    bottom: -2rem;
+}
+#template-4 .dialog-container__left .dialog-box::before{
+    right: -3.1rem;
+    height: 3rem;
+    width: 3rem;
+    transform: translateY(-0.6rem);
+}
+#template-4 .dialog-container__left .dialog-box::after{
+    right: -2.6rem;
+    height: 3rem;
+    transform: translateY(-0.6rem);
+}
+#template-4 .dialog-container__left .dialog-box::before, #template-4 .dialog-container__left .dialog-box::after{
+    top:25%
+}
 @media screen and (max-width:480px){
     html{
         font-size: 39%
