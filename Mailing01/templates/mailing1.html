@@ -15,14 +15,13 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 60.5%; 
-  font-family: "Hiragino Kaku Gothic ProN",Meiryo,"游ゴシック",YuGothic,sans-serif
+    -webkit-text-size-adjust: 100%;
+    font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3","HIragino Kaku Gothic Pro W3","HIragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック", "MS P Gothic",sans-serif;
 }
 
 body {
   box-sizing: border-box; 
   background-color: #f6f6f6;
-  font-size:1.4rem
 }
 
 .container{
@@ -33,33 +32,33 @@ body {
 
 header{
     width: 100%;
-    padding:1rem 0 0.8rem 0;
+    padding:10px 0 8px 0;
     background-color: #fff;
     text-align: center
 }
 
 header img{
-    width: 35rem;
+    width: 350px;
 }
 
 .line--yellow{
     width: 100%;
-    height: 1rem;
+    height: 10px;
     background-color: #ffd500
 }
 
 .top-content{
     width: 100%;
     background-color: #6eb92b;
-    padding:1rem;
+    padding:10px;
 }
 #top-content__header-text{
     margin: auto;
     text-align: center;
-    padding: 4rem 0
+    padding: 40px 0
 }
 #top-content__header-text p{
-    font-size: 3rem;
+    font-size: 30px;
     color:#fff
 }
 #top-content__header-text .bold-text{
@@ -67,18 +66,21 @@ header img{
 }
 
 #top-content__main{
-    padding: 3.3rem 1.4rem;
+    padding: 33px 14px;
     width: 100%;
     background-color: #fff;
 }
 .top-content__main-text{
     text-align: center
 }
+.text-small{
+    font-size: 24px;
+}
 #top-content__header-text .text-bold--small{
-    font-size: 2.4rem;
+    font-size: 24px;
 }
 .text-content{
-    font-size: 2.4rem;
+    font-size: 24px;
     text-align: center;
     color:#333;
     position: relative;
@@ -86,253 +88,264 @@ header img{
 .top-content__main-text .text-content::after, .top-content__main-text .flex-content-1::after{
     content: "";
     position: absolute;
-    bottom: -0.4rem;
+    bottom: -4px;
     left: 0;
     width: 100%;
-    height: .4rem;
+    height: 4px;
     background-color: #ff0000;
 }
 .top-content__main-text .flex-content-1{
     display: inline-block;
-    margin-top: .5rem;
+    margin-top: 5px;
     position: relative;
 }
 .top-content__main-text .flex-content-1 span{
-    font-size: 2.6rem;
+    font-size: 26px;
     font-weight: bold
 }
 .top-content__main-text .flex-content-1 img{
-    width: 20.4rem;
-    height: 4rem;
-    margin-bottom: -.8rem;
+    width: 204px;
+    height: 40px;
+    margin-bottom: -8px;
 }
 .top-content__main-text .flex-content-2{
     display: inline-block;
-    margin-top: 2rem;
+    margin-top: 20px;
     position: relative;
 }
 .top-content__main-text .flex-content-2 span{
-    font-size: 2.2rem;
+    font-size: 22px;
     font-weight: bold;
 }
 .top-content__main-text .flex-content-2 img{
-    width: 20rem;
-    height: 3.4rem;
-    margin-bottom: -0.7rem;
+    width: 200px;
+    height: 34px;
+    margin-bottom: -7px;
 }
 #content-multi-image{
     width: 100%;
     text-align: center;
-    margin-top:1.5rem;
+    margin-top:15px;
     position: relative;
 }
 #content-multi-image p{
-    font-size: 3.2rem;
+    font-size: 32px;
     font-weight: bold
 }
 #content-multi-image .text-01{
-    margin-left: 4rem
+    margin-left: 40px
 }
 #content-multi-image .text-02{
-    margin-top: 1rem
+    margin-top: 10px
 }
 #content-multi-image #multi-01{
     position: absolute;
-    left: 1rem;
-    top: 2rem;
-    width: 10rem;
-    height: 16rem;
+    left: 10px;
+    top: 10px;
+    width: 100px;
+    height: 160px;
 }
 #content-multi-image #multi-02{
     position: absolute;
-    right: 1rem;
-    top: 6rem;
-    width: 7.5rem;
-    height: 8.8rem;
+    right: 10px;
+    top: 60px;
+    width: 75px;
+    height: 88px;
 }
 .img-arrow{
-    margin-top:2.5rem;
-    width: 5.5rem;
-    height: 5.7rem;
+    margin-top:25px;
+    width: 55px;
+    height: 57px;
 }
 .arrow-container{
     width: 100%;
     text-align: center
 }
 .dialog-flex{
-    margin-top: 2rem;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .dialog-flex #person-01{
-    width: 8rem;
-    height: 9rem;
-    margin-left: 1rem;
+    width: 80px;
+    height: 90px;
+    margin-left: 10px;
 }
 .dialog-flex #dialog-01{
-    width: 41rem;
-    height: 8rem;
-    margin-left: 1rem;
+    width: 410px;
+    height: 80px;
+    margin-left: 10px;
+}
+#img-brand{
+    width: 100%;
+    height: 550px;
+    margin-bottom: 30px;
 }
 .dialog-container{
     /* display: flex;
     flex-direction: row;
     align-items: flex-end */
     position: relative;
-    margin-bottom: 3rem
+    margin-bottom: 30px
+}
+.text-date{
+    font-size: 9px;
+    float: right;
 }
 .dialog-box{
-    padding: 1rem 1.2rem;
-    border: 0.2rem solid #f16120;
-    border-radius: 2rem;
+    padding: 10px 12px;
+    border: 2px solid #f16120;
+    border-radius: 20px;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 30px;
     text-align: center;
-    max-width: 44.5rem;
+    max-width: 445px;
 }
 .dialog-box::before{
     content: '';
     position: absolute;
-    right: -3rem;
+    right: -30px;
     top: 50%;
-    height: 1.5rem;
+    height: 15px;
     background-color: #f16120;
-    width: 3rem;
+    width: 30px;
     border-left: #fff;
     clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
-    transform: translateY(-0.75rem);
+    transform: translateY(-7.5px);
 }
-
+.padding-bottom{
+    padding:0 40px
+}
 .dialog-box::after{
     content: '';
     position: absolute;
-    right: -2.4rem;
+    right: -24px;
     background-color: #fff;
     top: 50%;
-    height: 1.2rem;
-    width: 3rem;
+    height: 12px;
+    width: 30px;
     border-left: #fff;
     clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
-    transform: translateY(-0.6rem);
+    transform: translateY(-6px);
 }
 
 .link-content{
-    font-size: 2.6rem;
+    font-size: 26px;
     font-weight: bold;
     color:#333
 }
 .dialog-container #person-02{
-    width: 13rem;
-    height: 10rem;
+    width: 120px;
+    height: 90px;
     position: absolute;
-    right: -1.4rem;
-    bottom: 1.4rem;
+    right: -14px;
+    bottom: 14px;
 }
 .row-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 1.5rem
+    margin-top: 15px
 }
 .box-content{
-    width:28rem;
-    height: 23rem;
-    border:0.3rem solid #f16120;
+    width:270px;
+    height: 230px;
+    border:3px solid #f16120;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding:1.5rem 0
+    padding:15px 0
 }
 .box-content #box-img-1{
-    width: 17rem;
-    height: 6rem;
+    width: 170px;
+    height: 60px;
 }
 .box-content #box-img-2{
-    width: 15rem;
-    height: 9rem;
+    width: 150px;
+    height: 90px;
 }
 .box-content #box-img-3{
-    width: 10rem;
-    height: 10rem;
+    width: 100px;
+    height: 100px;
 }
 .box-content #box-img-4{
-    width: 25rem;
-    height: 16rem;
+    width: 250px;
+    height: 160px;
 }
 .box-content__text{
-    font-size: 2.6rem;
+    font-size: 26px;
     color:#666666;
     font-weight: bold;
     text-align: center
 }
 #img-text-03{
-    height: 7rem;
-    width: 53rem
+    height: 70px;
+    width: 530px
 }
 #arrow-pink{
-    width: 1.8rem;
-    height: 1.7rem;
+    width: 18px;
+    height: 17px;
 }
 .small-text{
-    font-size: 1.6rem;
+    font-size: 16px;
     color: #333
 }
 .text-bold{
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: bold
 }
 .text-bold--small{
-    font-size: 2.4rem;
+    font-size: 24px;
     font-weight: bold
 }
 .text-bold--mini{
-    font-size: 2.6rem;
+    font-size: 26px;
     font-weight: bold
 }
 .img-text{
-    width: 27.8rem;
-    height: 4.5rem;
+    width: 278px;
+    height: 45px;
 }
 #content-multi-image-2{
     width: 100%;
     text-align: center;
-    margin-top:1.5rem;
+    margin-top:15px;
     position: relative;
 }
 .text-bold--large{
-    font-size: 4.6rem;
+    font-size: 46px;
     font-weight: bold
 }
 .text-bold--medium{
-    font-size: 3.4rem;
+    font-size: 34px;
     font-weight: bold
 }
 #multi-04{
     position: absolute;
-    height: 16rem;
-    width: 11rem;
+    height: 160px;
+    width: 110px;
     left: 0;
-    top: 6rem;
+    top: 60px;
 }
 #multi-03{
     position: absolute;
-    height: 16rem;
-    width: 13rem;
+    height: 160px;
+    width: 130px;
     right: 0;
-    top: 6rem;
+    top: 60px;
 }
 
 /* Mid content */
 .mid-content{
     width: 100%;
-    padding: 3rem;
+    padding: 30px;
 }
 .btn--gradient{
     width: 100%;
-    height: 14rem;
-    border-radius: .8rem;
+    height: 140px;
+    border-radius: 8px;
     position: relative;
     box-shadow: 5px 7px 6px -3px rgba(0,0,0,0.7)
 }
@@ -344,8 +357,8 @@ header img{
     height: 50%;
     width: 100%;
     background-color: #ff0072;
-    border-top-left-radius: .8rem;
-    border-top-right-radius: .8rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .btn--gradient::after{
     position: absolute;
@@ -355,13 +368,13 @@ header img{
     height: 50%;
     width: 100%;
     background-color: #a20154;
-    border-bottom-left-radius: .8rem;
-    border-bottom-right-radius: .8rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .btn--gradient a{
     position: absolute;
     width: 100%;
-    font-size: 2.6rem;
+    font-size: 26px;
     height: 100%;
     text-decoration: none;
     font-weight: bold;
@@ -376,18 +389,18 @@ header img{
     align-items: center;
 }
 #img-arrow{
-    height: 4.4rem;
-    width: 4.4rem;
+    height: 44px;
+    width: 44px;
 }
 .mid-content__text{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 20px;
 }
 .text--orange{
     color:#f16120 ;
 }
 #flex-content-2{
-    font-size: 2.2rem;
+    font-size: 22px;
     text-decoration: none;
     color: #ff0072;
     font-weight: bold;
@@ -396,10 +409,10 @@ header img{
 #flex-content-2::after{
     content: "";
     position: absolute;
-    bottom: -0.2rem;
+    bottom: -2px;
     left: 0;
     width: 100%;
-    height: .2rem;
+    height: 2px;
     background-color: #ff0072;
 }
 
@@ -408,7 +421,7 @@ header img{
     background-color: #fef1c7;
     width: 100%;
     /* text-align: center; */
-    padding: 3rem;
+    padding: 30px;
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -417,50 +430,23 @@ header img{
 }
 .logo-box{
     width: 100%;
-    padding: 1rem 1rem 2rem 1rem;
-    border: .3rem solid #85be55;
-    border-radius: 1.5rem;
+    padding: 10px 10px 20px 10px;
+    border: 3px solid #85be55;
+    border-radius: 15px;
     background-color: #fff;
-    margin-bottom: 3rem;
-    margin-top: 11rem;
+    margin-bottom: 30px;
+    margin-top: 110px;
 }
 .logo-box--top{
     text-align: center;
-    border-bottom: .2rem solid #85be55;
+    border-bottom: 2px solid #85be55;
 }
-#ejoica{
-    width: 17rem;
-    height: 7.9rem;
-}
-#waon{
-    width: 11rem;
-    height: 6.5rem;
-}
-#nanaco{
-    width: 12rem;
-    height: 8rem;
-}
-#amazon{
-    width: 20rem;
-    height: 5rem;
-}
-#edy{
-    width: 6.4rem;
-    height: 6.5rem;
-}
-#google{
-    width: 28rem;
-    height: 17rem;
-}
-#iTunes{
-    width: 24rem;
-    height: 16rem;
-}
+
 #logoText{
-    width: 14rem;
-    height: 3.3rem;
+    width: 140px;
+    height: 33px;
     position: absolute;
-    bottom: -1.8rem;
+    bottom: -18px;
     right: 0;
 }
 .logo-box--content{
@@ -471,83 +457,314 @@ header img{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 .logo-box--content__bottom{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
     position: relative;
 }
 #guide{
     position: absolute;
-    top: 4rem;
-    width: 56rem;
-    height: 11rem;
+    top: 40px;
+    width: 560px;
+    height: 110px;
 }
 
 /* Footer content */
 .footer-content{
-    padding: 2rem;
+    padding: 20px;
     background-color: #f5f5ec;
 }
 #img-footer{
     width: 100%;
-    height: 12rem;
+    height: 120px;
 }
 .footer-content ul {
     list-style: none;
     /* list-style-image: url() */
 }
 .footer-content ul li{
-    padding-left: 3rem;
-    font-size: 2.3rem;
+/*    padding-left: 3rem; */
+/*    font-size: 2.3rem; */
     position: relative;
-    margin-top: 1rem;
+/*    margin-top: 1rem; */
 }
 .text-footer{
-    font-size: 2.3rem
+/*    font-size: 2.3rem */
 }
 .footer-content ul li::before{
     content: '';
     position: absolute;
     display: inline-block;
-    top: .4rem;
+    top: 4px;
     left: 0;
-    background-image: url(../images/list-style.png);
-    width: 2.3rem;
-    height: 2.3rem;
+/*    background-image: url(http://test.digishoku.co.jp/kracie/crm/mail/images/list-style.png); */
+    width: 23px;
+    height: 23px;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 .footer-link{
     color:#006600;
-    font-size: 2.3rem;
-    margin-bottom: 1rem
+/*    font-size: 2.3rem; */
+    margin-bottom: 10px
 }
-@media screen and (max-width:480px){
-    html{
-        font-size: 38%
+@media screen and (max-width:600px){
+    header{
+        padding:6.5px 0 4px 0;
     }
-    .footer-link, .text-footer{
-        font-size: 14px;
+    header img{
+        width: 227px;
+    }    
+    .line--yellow{
+        height: 6.5px;
+    }
+    .top-content{
+        padding:6.5px
+    }
+    #top-content__header-text{
+        padding:26px 0
+    }
+    #top-content__header-text p{
+        font-size: 19.5px;
+    }
+    #top-content__main{
+        padding: 21.4px 9px;
+    }
+    .text-small, #top-content__header-text .text-bold--small, .text-content{
+        font-size: 15.6px;
+    }
+    .top-content__main-text .text-content::after, .top-content__main-text .flex-content-1::after{
+        bottom: -2.6px;
+        height: 2.6px;
+    }
+    .top-content__main-text .flex-content-1{
+        margin-top: 3.25px;
+    }
+    .top-content__main-text .flex-content-1 span{
+        font-size: 16.4px;
+    }
+    .top-content__main-text .flex-content-1 img{
+        width: 132.6px;
+        height: 26px;
+        margin-bottom: -5px;
+    }
+    .top-content__main-text .flex-content-2{
+        margin-top: 13px;
+    }
+    .top-content__main-text .flex-content-2 span{
+        font-size: 14.3px;
+    }
+    .top-content__main-text .flex-content-2 img{
+        width: 130px;
+        height: 22px;
+        margin-bottom: -4.5px;  
+    }
+    #content-multi-image{
+        margin-top:9.75px;
+    }
+    #content-multi-image p{
+        font-size: 20.8px;
+    }
+    #content-multi-image .text-01{
+        margin-left: 26px;
+    }
+    #content-multi-image .text-02{
+        margin-top: 6.5px;
+    }
+    #content-multi-image #multi-01{
+        left: 6.5px;
+        top: 6.5px;
+        width: 65px;
+        height: 104px;
+    }
+    #content-multi-image #multi-02{
+        right: 6.5px;
+        top: 26px;
+        width: 49px;
+        height: 57px;        
+    }
+    .img-arrow{
+        margin-top:16.25px;
+        width: 38px;
+        height: 37px;
+    }
+    .dialog-flex{
+        margin-top: 13px;
+    }
+    .dialog-flex #person-01{
+        width: 52px;
+        height: 58px;
+        margin-left: 6.5px;
+    }
+    .dialog-flex #dialog-01{
+        width: 266px;
+        height: 52px;
+        margin-left: 6.5px;        
+    }
+    .dialog-container{
+        margin-bottom: 19.5px;
+    }
+    .dialog-box{
+        padding: 6.5px 7.8px;
+        border-radius: 13px;
+        margin-top: 19.5px;
+        max-width: 290px;        
+    }
+    .dialog-box::before{
+        right: -19.5px;
+        height: 9.75px;
+        width: 19.5px;
+        transform: translateY(-4.875px);
+    }
+    .dialog-box::after{
+        right: 15.6px;
+        height: 7.8px;
+        width: 19.5px;
+        transform: translateY(-4px);
+    }
+    .link-content, .box-content__text{
+        font-size: 17px;
+    }
+    .dialog-container #person-02{
+        width: 63px;
+        height: 55.5px;
+        position: absolute;
+        right: -9px;
+        bottom: 9px;        
+    }
+    .row-content{
+        margin-top: 9.75px;
+    }
+    .box-content{
+        width: 175.5px;
+        height: 150px;
+        padding:9.75px 0
+    }
+    .box-content #box-img-1{
+        width: 110.5px;
+        height: 38px;        
+    }
+    .box-content #box-img-2{
+        width: 97.5px;
+        height: 58.5px;
+    }
+    .box-content #box-img-3{
+        width: 65px;
+        height: 65px;
+    }
+    .box-content #box-img-4{
+        width: 162px;
+        height: 104px;
+    }
+    #img-text-03{
+        height: 45.5px;
+        width: 345px;
+    }
+    #arrow-pink{
+        width: 12px;
+        height: 11px;        
+    }
+    .small-text{
+        font-size:10.5px
+    }
+    .text-bold{
+        font-size: 19.5px
+    }
+    .text-bold--small{
+        font-size: 15.6px;
+    }
+    .img-text{
+        width: 180px;
+        height: 29px;       
+    }
+    #content-multi-image-2{
+        margin-top: 9.75px;
+    }
+    .text-bold--large{
+        font-size: 30px;
+    }
+    .text-bold--medium{
+        font-size: 22px;
+    }
+    #multi-04{
+        height: 104px;
+        width: 71.5px;
+        top: 39px;
+    }
+    #multi-03{
+        height: 104px;
+        width: 84.5px;
+        top: 39px;
+    }
+    .mid-content{
+        padding: 19.5px;
+    }
+    .btn--gradient{
+        height: 91px;
+    }
+    .btn--gradient a{
+        font-size: 16.4px;
+    }
+    #img-arrow{
+        width: 28.6px;
+        height: 28.6px;
+    }
+    .mid-content__text{
+        margin-top: 13px;
+    }
+    #flex-content-2{
+        font-size: 14.3px;
+    }
+    #flex-content-2::after{
+        bottom:-1.3px;
+        height:-1.3px
+    }
+    .logo-content{
+        padding: 19.5px;
+    }
+    .footer-content{
+        padding:13px
+    }
+    #img-footer{
+        height: 78px;
+    }
+    .footer-content ul li::before{
+        top: 2.6px;
+        width: 15px;
+        height: 15px;
+    }
+    .footer-link{
+        margin-bottom: 6.5px;
+    }
+    #img-brand{
+        height: 375.5px;
+        margin-bottom: 19.5px;
+    }
+    .padding-bottom{
+        padding:0 26px
+    }
+    .text-date{
+        font-size: 6px;
     }
 }
-@media screen and (max-width:320px){
+/* @media screen and (max-width:320px){
     html{
         font-size: 31%
     }
-}        
+}         */
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="../images/logo.jpg" alt="">
+            <img src="../images/template1/logo.jpg" alt="">
         </header>
         <div class="line--yellow"></div>
         <div class="top-content">
@@ -559,24 +776,24 @@ header img{
                 <div class="top-content__main-text">
                     <span class="text-content">記事を読んだり、くじに参加したりすると</span>
                     <div class="flex-content-1">
-                        <img src="../images/img-text-01.png" alt="">
+                        <img src="../images/template1/img-text-01.png" alt="">
                         <span>がたまるようになりました!</span>
                     </div>
                     <div class="flex-content-2">
-                        <img src="../images/img-text-01.png" alt="">
+                        <img src="../images/template1/img-text-01.png" alt="">
                         <span>を多くためてくれた方に</span>
                     </div>
                 </div>
                 <div id="content-multi-image">
                     <p class="text-01">＼選べる電子マネーギフト／を</p>
                     <p class="text-02">プレゼント!</p>
-                    <img class="img-arrow" src="../images/arrow-down.png" alt="">
-                    <img id="multi-01" src="../images/multi-01.png" alt="">
-                    <img id="multi-02" src="../images/multi-02.png" alt="">
+                    <img class="img-arrow" src="../images/template1/arrow-down.png" alt="">
+                    <img id="multi-01" src="../images/template1/multi-01.png" alt="">
+                    <img id="multi-02" src="../images/template1/multi-02.png" alt="">
                 </div>
                 <div class="dialog-flex">
-                    <img id="person-01" src="../images/person01.png" alt="">
-                    <img id="dialog-01" src="../images/dialog01.png" alt="">
+                    <img id="person-01" src="../images/template1/person01.png" alt="">
+                    <img id="dialog-01" src="../images/template1/dialog01.png" alt="">
                 </div>
                 <div class="dialog-container">
                     <div class="dialog-box">
@@ -587,7 +804,7 @@ header img{
                         </p>
                         <span class="text-content">たとえば、こんなふうに</span>
                     </div>
-                    <img id="person-02" src="../images/person-02.png" alt="">
+                    <img id="person-02" src="../images/template1/person-02.png" alt="">
                 </div>
                 <div class="row-content">
                     <div class="box-content">
@@ -596,14 +813,14 @@ header img{
                             <p class="box-content__text">漢方の知恵を</p>
                             <p class="box-content__text">身につける!</p>
                         </div>
-                        <img id="box-img-1" src="../images/box1.png" alt="">
+                        <img id="box-img-1" src="../images/template1/box1.png" alt="">
                     </div>
                     <div class="box-content">
                         <div>
                             <p class="box-content__text">動画で漢方薬の</p>
                             <p class="box-content__text">解説を見る!</p>
                         </div>
-                        <img id="box-img-2" src="../images/box2.png" alt="">                        
+                        <img id="box-img-2" src="../images/template1/box2.png" alt="">                        
                     </div>
                 </div>
                 <div class="row-content">
@@ -612,30 +829,30 @@ header img{
                             <p class="box-content__text">毎日くじに</p>
                             <p class="box-content__text">チャレンジする！</p>
                         </div>
-                        <img id="box-img-3" src="../images/box3.png" alt="">
+                        <img id="box-img-3" src="../images/template1/box3.png" alt="">
                     </div>
                     <div class="box-content">
                         <div>
                             <p class="box-content__text">その他いろいろ</p>
                         </div>
-                        <img id="box-img-4" src="../images/box4.png" alt="">                        
+                        <img id="box-img-4" src="../images/template1/box4.png" alt="">                        
                     </div>
                 </div>
                 <div class="arrow-container">
-                    <img class="img-arrow" src="../images/arrow-down.png" alt="">
+                    <img class="img-arrow" src="../images/template1/arrow-down.png" alt="">
                 </div>
                 <div style="text-align: center">
-                    <img id="img-text-03" src="../images/img-text-03.png" alt="">
+                    <img id="img-text-03" src="../images/template1/img-text-03.png" alt="">
                     <p class="small-text">※ためたスコア数はマイページで確認できます。</p>
                 </div>
                 <div class="arrow-container">
-                    <img class="img-arrow" src="../images/arrow-down.png" alt="">
+                    <img class="img-arrow" src="../images/template1/arrow-down.png" alt="">
                 </div>
                 <div>
-                    <p style="padding: 0 4rem" class="text-bold">今なら、</p>
+                    <p class="padding-bottom text-bold" >今なら、</p>
                     <div style="text-align: center">
                         <span class="text-bold--small">ためた</span>
-                        <img style="margin-bottom: -.8rem" class="img-text" src="../images/img-text-01.png" alt="">
+                        <img class="img--margin-bottom"  class="img-text" src="../images/template1/img-text-01.png" alt="">
                         <span class="text-bold--small">数上位</span>
                     </div>
                     <div id="content-multi-image-2">
@@ -643,9 +860,9 @@ header img{
                         <p class="text-bold--medium">500円分の</p>
                         <p class="text-bold--medium">電子マネーギフトを</p>
                         <p class="text-bold--medium">プレゼント！</p>
-                        <img id="multi-04" src="../images/person04.png" alt="">
-                        <img id="multi-03" src="../images/person03.png" alt="">
-                        <p style="font-size: 1.8rem; float:right">対象期間：2020/3/2~4/30</p>
+                        <img id="multi-04" src="../images/template1/person04.png" alt="">
+                        <img id="multi-03" src="../images/template1/person03.png" alt="">
+                        <p class="text-date" >対象期間：2020/3/2~4/30</p>
                     </div>
                 </div>
             </div>
@@ -655,7 +872,7 @@ header img{
                 <a href="#">
                     <div class="btn--content">
                         <span>今すぐ、カンポフルスコアをためる！</span>
-                        <img id="img-arrow" src="../images/arrow-button.png" alt=""> 
+                        <img id="img-arrow" src="../images/template1/arrow-button.png" alt=""> 
                     </div>
                 </a>
             </div>
@@ -663,26 +880,26 @@ header img{
                 <p class="text-content">漢方の考え方で、あなたの美と健康の</p>
                 <p class="text-content">お手伝いをするのが<span class="text--orange">カンポフルスコア</span>です。</p>
 
-                    <a style="font-size:2.4rem" id="flex-content-2" href="">
+                    <a class="text-small" id="flex-content-2" href="">
                         <span>もっと、カンポフルスコアについて知りたい！</span>
-                        <img id="arrow-pink" src="../images/arrow-link.png" alt="">
+                        <img id="arrow-pink" src="../images/template1/arrow-link.png" alt="">
                     </a>
 
                 
             </div>
         </div>
         <div class="logo-content">
-            <img style="width: 100%; height: 55rem; margin-bottom: 3rem;" src="../images/brand.png" alt="">
+            <img id="img-brand"  src="../images/template1/brand.png" alt="">
             <div class="btn--gradient">
                 <a href="#">
                     <div class="btn--content">
                         <span>今すぐ、カンポフルスコアをためる！</span>
-                        <img id="img-arrow" src="../images/arrow-button.png" alt=""> 
+                        <img id="img-arrow" src="../images/template1/arrow-button.png" alt=""> 
                     </div>
                 </a>
             </div>
         </div>
-        <img id="img-footer" src="../images/img-footer.png" alt="">
+        <img id="img-footer" src="../images/template1/img-footer.png" alt="">
         <div class="footer-content">
             <p class="text-footer">＜Kampoful Life Newsについて＞</p>
             <p class="text-footer">このメールは、クラシエの Kampoful Life 会員登録時に「Kampoful Life会員規約」にご同意いただいた方を対象にお送りしております。今後も「Kampoful Life News」として、お得な情報などを不定期に配信させていただきます。</p>
@@ -702,24 +919,24 @@ header img{
             <br/>
             <p class="text-footer">◆選べる電子マネー「EJOICAセレクトギフト」について</p>
             <ul>
-                <li><span>「EJOICAセレクトギフト」は、株式会社NTTカードソリューションが発行する電子マネーギフトです。</span></li>
-                <li><span>「nanaco（ナナコ）」は株式会社セブン・カードサービスの登録商標です。</span></li>
-                <li><span>「楽天Edy（ラクテンエディ）」は、楽天グループのプリペイド型電子マネーサービスです。</span></li>
+                <li><span>※「EJOICAセレクトギフト」は、株式会社NTTカードソリューションが発行する電子マネーギフトです。</span></li>
+                <li><span>※「nanaco（ナナコ）」は株式会社セブン・カードサービスの登録商標です。</span></li>
+                <li><span>※「楽天Edy（ラクテンエディ）」は、楽天グループのプリペイド型電子マネーサービスです。</span></li>
                 <li>
-                    <p>本キャンペーンはクラシエ製薬株式会社による提供です。本キャンペーンについてのお問い合わせはAmazonではお受けしておりません。</p>
-                    <p>membersupport-kampoful-life@kracie.jp までお願い致します。</p>
+                    <p>※本キャンペーンはクラシエ製薬株式会社による提供です。本キャンペーンについてのお問い合わせはAmazonではお受けしておりません。</p>
+                    <p><a class="footer-link" href="mailto:membersupport-kampoful-life@kracie.jp">membersupport-kampoful-life@kracie.jp</a>までお願い致します。</p>
                 </li>
                 <li>
-                    <span>Amazon、Amazon.co.jp およびそれらのロゴはAmazon.com, Inc. またはその関連会社の商標です。</span>
+                    <span>※Amazon、Amazon.co.jp およびそれらのロゴはAmazon.com, Inc. またはその関連会社の商標です。</span>
                 </li>
                 <li>
-                    <span>© 2020 iTunes K.K. All rights reserved.</span>
+                    <span>※© 2020 iTunes K.K. All rights reserved.</span>
                 </li>
                 <li>
-                    <span>「WAON（ワオン）」は、イオン株式会社の登録商標です。</span>
+                    <span>※「WAON（ワオン）」は、イオン株式会社の登録商標です。</span>
                 </li>
                 <li>
-                    <span>Google Play、Google Play ロゴは、Google LLC の商標です。</span>
+                    <span>※Google Play、Google Play ロゴは、Google LLC の商標です。</span>
                 </li>
             </ul>
             <br/>
