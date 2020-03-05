@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>【プレゼントあり】豪華クラシエ商品詰め合わせ！｜『女性の抜け毛改善法』『おなかの冷え対策』他- 2月号 Kampoful Life メールマガジン♪</title>
     <!-- <link href="../css/styles.css" rel="stylesheet" type="text/css" /> -->
-    <style>
+    <style type='text/css'>
 *,
 *::after,
 *::before {
@@ -15,12 +15,11 @@
   box-sizing: inherit; }
 
 html {
-    -webkit-text-size-adjust: 100%;
     font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3","HIragino Kaku Gothic Pro W3","HIragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック", "MS P Gothic",sans-serif;
 }
 
 body {
-  box-sizing: border-box; 
+  box-sizing: border-box;
   background-color: #f6f6f6;
 }
 
@@ -85,19 +84,11 @@ header img{
     color:#333;
     position: relative;
 }
-.top-content__main-text .text-content::after, .top-content__main-text .flex-content-1::after{
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #ff0000;
-}
 .top-content__main-text .flex-content-1{
     display: inline-block;
     margin-top: 5px;
     position: relative;
+    border-bottom: 3px solid #ff0000;
 }
 .top-content__main-text .flex-content-1 span{
     font-size: 26px;
@@ -124,9 +115,32 @@ header img{
 }
 #content-multi-image{
     width: 100%;
-    text-align: center;
+    height: 180px;
+    margin-left: 3px;
+    margin-top: 10px;
+    background-image: url('../images/template1/image-arrow-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* text-align: center;
     margin-top:15px;
-    position: relative;
+    position: relative; */
+}
+#dialog-box-1-1{
+    background-image: url('../images/template1/dialog-image-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#content-multi-image-2{
+    width: 100%;
+    height: 210px;
+    background-image: url('../images/template1/pr-image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#dialog-box__content-1-1{
+    width: 70%;
+    height: 100%;
+    padding: 10px 10px;
 }
 #content-multi-image p{
     font-size: 32px;
@@ -139,18 +153,16 @@ header img{
     margin-top: 10px
 }
 #content-multi-image #multi-01{
-    position: absolute;
-    left: 10px;
-    top: 10px;
+    float: left;
     width: 100px;
     height: 160px;
+    margin-top: -90px;
 }
 #content-multi-image #multi-02{
-    position: absolute;
-    right: 10px;
-    top: 60px;
     width: 75px;
     height: 88px;
+    float: right;
+    margin-top: -55px;
 }
 .img-arrow{
     margin-top:25px;
@@ -163,8 +175,6 @@ header img{
 }
 .dialog-flex{
     margin-top: 20px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .dialog-flex #person-01{
@@ -179,7 +189,6 @@ header img{
 }
 #img-brand{
     width: 100%;
-    height: 550px;
     margin-bottom: 30px;
 }
 .dialog-container{
@@ -187,22 +196,18 @@ header img{
     flex-direction: row;
     align-items: flex-end */
     position: relative;
-    margin-bottom: 30px
+    margin-bottom: 40px
 }
 .text-date{
-    font-size: 9px;
+    font-size: 20px;
     float: right;
 }
 .dialog-box{
-    padding: 10px 12px;
-    border: 2px solid #f16120;
-    border-radius: 20px;
-    position: relative;
     margin-top: 30px;
     text-align: center;
-    max-width: 445px;
+    width: 110%;
 }
-.dialog-box::before{
+/* .dialog-box::before{
     content: '';
     position: absolute;
     right: -30px;
@@ -213,11 +218,11 @@ header img{
     border-left: #fff;
     clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
     transform: translateY(-7.5px);
-}
+} */
 .padding-bottom{
     padding:0 40px
 }
-.dialog-box::after{
+/* .dialog-box::after{
     content: '';
     position: absolute;
     right: -24px;
@@ -228,7 +233,7 @@ header img{
     border-left: #fff;
     clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
     transform: translateY(-6px);
-}
+} */
 
 .link-content{
     font-size: 26px;
@@ -238,24 +243,23 @@ header img{
 .dialog-container #person-02{
     width: 120px;
     height: 90px;
-    position: absolute;
-    right: -14px;
-    bottom: 14px;
+    float: right;
+    margin-top: -90px;
+    margin-bottom: 20px;
 }
 .row-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin-top: 15px
 }
+.box-content__left{
+    float: left;
+}
+.box-content__right{
+    float: right;
+}
 .box-content{
-    width:270px;
+    width:49%;
     height: 230px;
     border:3px solid #f16120;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     padding:15px 0
 }
 .box-content #box-img-1{
@@ -280,6 +284,10 @@ header img{
     font-weight: bold;
     text-align: center
 }
+.box-img{
+    text-align: center;
+    width: 100%
+}
 #img-text-03{
     height: 70px;
     width: 530px
@@ -291,6 +299,11 @@ header img{
 .small-text{
     font-size: 16px;
     color: #333
+}
+.img--margin-bottom{
+    width: 240px;
+    height: 40px;
+    margin-bottom: -5px;
 }
 .text-bold{
     font-size: 30px;
@@ -323,18 +336,16 @@ header img{
     font-weight: bold
 }
 #multi-04{
-    position: absolute;
     height: 160px;
     width: 110px;
-    left: 0;
-    top: 60px;
+    margin-top: -180px;
+    float: left;
 }
 #multi-03{
-    position: absolute;
     height: 160px;
     width: 130px;
-    right: 0;
-    top: 60px;
+    margin-top: -180px;
+    float: right;
 }
 
 /* Mid content */
@@ -346,43 +357,9 @@ header img{
     width: 100%;
     height: 140px;
     border-radius: 8px;
-    position: relative;
-    box-shadow: 5px 7px 6px -3px rgba(0,0,0,0.7)
 }
-.btn--gradient::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 50%;
-    width: 100%;
-    background-color: #ff0072;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-.btn--gradient::after{
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    height: 50%;
-    width: 100%;
-    background-color: #a20154;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-}
-.btn--gradient a{
-    position: absolute;
-    width: 100%;
-    font-size: 26px;
-    height: 100%;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+
 .btn--content{
     z-index: 1;
     display: flex;
@@ -394,7 +371,6 @@ header img{
 }
 .mid-content__text{
     text-align: center;
-    margin-top: 20px;
 }
 .text--orange{
     color:#f16120 ;
@@ -405,16 +381,9 @@ header img{
     color: #ff0072;
     font-weight: bold;
     position: relative;
+    border-bottom: 2px solid #ff0072
 }
-#flex-content-2::after{
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ff0072;
-}
+
 
 /* Logo content */
 .logo-content{
@@ -521,7 +490,7 @@ header img{
     }
     header img{
         width: 227px;
-    }    
+    }
     .line--yellow{
         height: 6.5px;
     }
@@ -564,10 +533,11 @@ header img{
     .top-content__main-text .flex-content-2 img{
         width: 130px;
         height: 22px;
-        margin-bottom: -4.5px;  
+        margin-bottom: -4.5px;
     }
     #content-multi-image{
         margin-top:9.75px;
+        height: 115px;
     }
     #content-multi-image p{
         font-size: 20.8px;
@@ -579,16 +549,14 @@ header img{
         margin-top: 6.5px;
     }
     #content-multi-image #multi-01{
-        left: 6.5px;
-        top: 6.5px;
         width: 65px;
         height: 104px;
+        margin-top: -58.5px
     }
     #content-multi-image #multi-02{
-        right: 6.5px;
-        top: 26px;
         width: 49px;
-        height: 57px;        
+        height: 57px;
+        margin-top: -37.75px
     }
     .img-arrow{
         margin-top:16.25px;
@@ -606,28 +574,14 @@ header img{
     .dialog-flex #dialog-01{
         width: 266px;
         height: 52px;
-        margin-left: 6.5px;        
+        margin-left: 6.5px;
     }
     .dialog-container{
         margin-bottom: 19.5px;
     }
     .dialog-box{
-        padding: 6.5px 7.8px;
-        border-radius: 13px;
-        margin-top: 19.5px;
-        max-width: 290px;        
-    }
-    .dialog-box::before{
-        right: -19.5px;
-        height: 9.75px;
-        width: 19.5px;
-        transform: translateY(-4.875px);
-    }
-    .dialog-box::after{
-        right: 15.6px;
-        height: 7.8px;
-        width: 19.5px;
-        transform: translateY(-4px);
+        height: 100.75px;
+        width: 105%;
     }
     .link-content, .box-content__text{
         font-size: 17px;
@@ -637,19 +591,22 @@ header img{
         height: 55.5px;
         position: absolute;
         right: -9px;
-        bottom: 9px;        
+        bottom: 9px;
     }
     .row-content{
         margin-top: 9.75px;
     }
     .box-content{
-        width: 175.5px;
         height: 150px;
         padding:9.75px 0
     }
+    .img--margin-bottom{
+        width:156px;
+        height: 26px;
+    }
     .box-content #box-img-1{
         width: 110.5px;
-        height: 38px;        
+        height: 38px;
     }
     .box-content #box-img-2{
         width: 97.5px;
@@ -669,7 +626,7 @@ header img{
     }
     #arrow-pink{
         width: 12px;
-        height: 11px;        
+        height: 11px;
     }
     .small-text{
         font-size:10.5px
@@ -682,13 +639,22 @@ header img{
     }
     .img-text{
         width: 180px;
-        height: 29px;       
+        height: 29px;
     }
     #content-multi-image-2{
         margin-top: 9.75px;
+        height: 130px;
     }
     .text-bold--large{
         font-size: 30px;
+    }
+    #dialog-box__content-1-1{
+        width: 75%;
+        height: 100%;
+        padding: 10px 10px;
+    }
+    #dialog-box__content-1-1 .text-content{
+        font-size: 13.6px;
     }
     .text-bold--medium{
         font-size: 22px;
@@ -696,12 +662,12 @@ header img{
     #multi-04{
         height: 104px;
         width: 71.5px;
-        top: 39px;
+        margin-top: -117px
     }
     #multi-03{
         height: 104px;
         width: 84.5px;
-        top: 39px;
+        margin-top: -117px
     }
     .mid-content{
         padding: 19.5px;
@@ -709,15 +675,10 @@ header img{
     .btn--gradient{
         height: 91px;
     }
-    .btn--gradient a{
-        font-size: 16.4px;
-    }
+
     #img-arrow{
         width: 28.6px;
         height: 28.6px;
-    }
-    .mid-content__text{
-        margin-top: 13px;
     }
     #flex-content-2{
         font-size: 14.3px;
@@ -744,27 +705,63 @@ header img{
         margin-bottom: 6.5px;
     }
     #img-brand{
-        height: 375.5px;
         margin-bottom: 19.5px;
     }
     .padding-bottom{
         padding:0 26px
     }
     .text-date{
-        font-size: 6px;
+        font-size: 13px;
     }
 }
-/* @media screen and (max-width:320px){
-    html{
-        font-size: 31%
+@media screen and (max-width:320px){
+    #top-content__header-text p{
+        font-size: 17.5px;
     }
-}         */
+    .text-small, #top-content__header-text .text-bold--small, .text-content{
+        font-size: 13.6px
+    }
+    .top-content__main-text .flex-content-1 img{
+        width: 120.6px;
+        height: 25px;
+        margin-bottom: -5px;
+    }
+    .top-content__main-text .flex-content-1 span{
+        font-size: 12.5px
+    }
+    .top-content__main-text .flex-content-2 span{
+        font-size: 13.3px
+    }
+    #dialog-box__content-1-1 .text-content{
+        font-size: 12.6px
+    }
+    .link-content{
+        font-size: 13px
+    }
+    #dialog-box__content-1-1{
+        padding: 0 10px
+    }
+    .box-content__text{
+        font-size: 15px
+    }
+    .box-content #box-img-4{
+        width: 100%;
+        height: auto;
+    }
+    #img-text-03{
+        height: 39.5px;
+        width: 290px;
+    }
+    #flex-content-2{
+        font-size: 12.3px
+    }
+}        
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="../images/template1/logo.jpg" alt="">
+            <img src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/logo.jpg" alt="">
         </header>
         <div class="line--yellow"></div>
         <div class="top-content">
@@ -774,106 +771,119 @@ header img{
             </div>
             <div id='top-content__main'>
                 <div class="top-content__main-text">
-                    <span class="text-content">記事を読んだり、くじに参加したりすると</span>
+                    <span class="text-content" style="border-bottom: 3px solid #ff0000;">記事を読んだり、くじに参加したりすると</span>
                     <div class="flex-content-1">
-                        <img src="../images/template1/img-text-01.png" alt="">
+                        <img src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/img-text-01.png" alt="">
                         <span>がたまるようになりました!</span>
                     </div>
                     <div class="flex-content-2">
-                        <img src="../images/template1/img-text-01.png" alt="">
+                        <img src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/img-text-01.png" alt="">
                         <span>を多くためてくれた方に</span>
                     </div>
                 </div>
-                <div id="content-multi-image">
-                    <p class="text-01">＼選べる電子マネーギフト／を</p>
+                <div style="margin-top: 10px">
+                    <img style="width: 100%" src="../images/template1/image-arrow-1.png" alt="">
+                    <!-- <p class="text-01">＼選べる電子マネーギフト／を</p>
                     <p class="text-02">プレゼント!</p>
-                    <img class="img-arrow" src="../images/template1/arrow-down.png" alt="">
-                    <img id="multi-01" src="../images/template1/multi-01.png" alt="">
-                    <img id="multi-02" src="../images/template1/multi-02.png" alt="">
+                    <img class="img-arrow" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/arrow-down.png" alt="">
+                    <img id="multi-01" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/multi-01.png" alt="">
+                    <img id="multi-02" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/multi-02.png" alt=""> -->
                 </div>
-                <div class="dialog-flex">
-                    <img id="person-01" src="../images/template1/person01.png" alt="">
-                    <img id="dialog-01" src="../images/template1/dialog01.png" alt="">
+                <div style="clear: both">
+                    <img style="width: 100%" src="../images/template1/dialog-image-1-1.png" alt="">
+                    <!-- <img style="float: left; margin-bottom: 30px" id="person-01" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/person01.png" alt="">
+                    <img style="float: left" id="dialog-01" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/dialog01.png" alt=""> -->
                 </div>
-                <div class="dialog-container">
-                    <div class="dialog-box">
-                        <span class="text-content">今までどおり、カンポフルライフを</span>
-                        <p>
-                            <a class="link-content" href="">楽しんでもらうだけで</a>
-                            <span class="text-content">たまります!</span>
-                        </p>
-                        <span class="text-content">たとえば、こんなふうに</span>
+                <div style="clear: both" class="dialog-container">
+                    <div class="dialog-box" id="dialog-box-1-1">
+                        <div id="dialog-box__content-1-1">
+                                <span class="text-content">今までどおり、カンポフルライフを</span>
+                                <p>
+                                    <a class="link-content" href="">楽しんでもらうだけで</a>
+                                    <span class="text-content">たまります!</span>
+                                </p>
+                                <span class="text-content">たとえば、こんなふうに</span>
+                        </div>
+
                     </div>
-                    <img id="person-02" src="../images/template1/person-02.png" alt="">
+                    <!-- <img id="person-02" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/person-02.png" alt=""> -->
                 </div>
-                <div class="row-content">
-                    <div class="box-content">
+                <div class="row-content" style="clear: both">
+                    <div class="box-content box-content__left" style="flex-direction: column; margin-bottom: 15px">
                         <div>
                             <p class="box-content__text">記事を読んで</p>
                             <p class="box-content__text">漢方の知恵を</p>
                             <p class="box-content__text">身につける!</p>
                         </div>
-                        <img id="box-img-1" src="../images/template1/box1.png" alt="">
+                        <div class="box-img">
+                            <img id="box-img-1" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/box1.png" alt="">
+                        </div>
+                        
                     </div>
-                    <div class="box-content">
+                    <div class="box-content box-content__right">
                         <div>
                             <p class="box-content__text">動画で漢方薬の</p>
                             <p class="box-content__text">解説を見る!</p>
                         </div>
-                        <img id="box-img-2" src="../images/template1/box2.png" alt="">                        
+                        <div class="box-img">
+                            <img style="margin-top: 20px" id="box-img-2" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/box2.png" alt="">
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="row-content">
-                    <div class="box-content">
+                <div class="row-content" style="clear: both">
+                    <div class="box-content box-content__left">
                         <div>
                             <p class="box-content__text">毎日くじに</p>
                             <p class="box-content__text">チャレンジする！</p>
                         </div>
-                        <img id="box-img-3" src="../images/template1/box3.png" alt="">
+                        <div class="box-img">
+                            <img id="box-img-3" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/box3.png" alt="">
+                        </div>
+                        
                     </div>
-                    <div class="box-content">
+                    <div class="box-content box-content__right">
                         <div>
                             <p class="box-content__text">その他いろいろ</p>
                         </div>
-                        <img id="box-img-4" src="../images/template1/box4.png" alt="">                        
+                        <div class="box-img">
+                            <img id="box-img-4" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/box4.png" alt="">
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="arrow-container">
-                    <img class="img-arrow" src="../images/template1/arrow-down.png" alt="">
+                    <img class="img-arrow" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/arrow-down.png" alt="">
                 </div>
                 <div style="text-align: center">
-                    <img id="img-text-03" src="../images/template1/img-text-03.png" alt="">
+                    <img id="img-text-03" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/img-text-03.png" alt="">
                     <p class="small-text">※ためたスコア数はマイページで確認できます。</p>
                 </div>
                 <div class="arrow-container">
-                    <img class="img-arrow" src="../images/template1/arrow-down.png" alt="">
+                    <img class="img-arrow" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/arrow-down.png" alt="">
                 </div>
                 <div>
                     <p class="padding-bottom text-bold" >今なら、</p>
                     <div style="text-align: center">
                         <span class="text-bold--small">ためた</span>
-                        <img class="img--margin-bottom"  class="img-text" src="../images/template1/img-text-01.png" alt="">
+                        <img class="img--margin-bottom"  class="img-text" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/img-text-01.png" alt="">
                         <span class="text-bold--small">数上位</span>
                     </div>
-                    <div id="content-multi-image-2">
-                        <p class="text-bold--large">＼1,000名様／に</p>
-                        <p class="text-bold--medium">500円分の</p>
-                        <p class="text-bold--medium">電子マネーギフトを</p>
-                        <p class="text-bold--medium">プレゼント！</p>
-                        <img id="multi-04" src="../images/template1/person04.png" alt="">
-                        <img id="multi-03" src="../images/template1/person03.png" alt="">
-                        <p class="text-date" >対象期間：2020/3/2~4/30</p>
+                    <div>
+                        <img style="width: 100%"     src="../images/template1/pr-image.png" alt="">
                     </div>
+                    <p class="text-date" >対象期間：2020/3/2~4/30</p>
                 </div>
             </div>
         </div>
         <div class="mid-content">
             <div class="btn--gradient">
                 <a href="#">
-                    <div class="btn--content">
+                    <img style="width: 100%" src="../images/template1/button-1-1.png" alt="">
+                    <!-- <div class="btn--content">
                         <span>今すぐ、カンポフルスコアをためる！</span>
-                        <img id="img-arrow" src="../images/template1/arrow-button.png" alt=""> 
-                    </div>
+                        <img id="img-arrow" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/arrow-button.png" alt="">
+                    </div> -->
                 </a>
             </div>
             <div class="mid-content__text">
@@ -882,24 +892,25 @@ header img{
 
                     <a class="text-small" id="flex-content-2" href="">
                         <span>もっと、カンポフルスコアについて知りたい！</span>
-                        <img id="arrow-pink" src="../images/template1/arrow-link.png" alt="">
+                        <img id="arrow-pink" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/arrow-link.png" alt="">
                     </a>
 
-                
+
             </div>
         </div>
         <div class="logo-content">
-            <img id="img-brand"  src="../images/template1/brand.png" alt="">
+            <img id="img-brand"  src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/brand.png" alt="">
             <div class="btn--gradient">
-                <a href="#">
-                    <div class="btn--content">
-                        <span>今すぐ、カンポフルスコアをためる！</span>
-                        <img id="img-arrow" src="../images/template1/arrow-button.png" alt=""> 
-                    </div>
-                </a>
-            </div>
+                    <a href="#">
+                        <img style="width: 100%" src="../images/template1/button-1-2.png" alt="">
+                        <!-- <div class="btn--content">
+                            <span>今すぐ、カンポフルスコアをためる！</span>
+                            <img id="img-arrow" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/arrow-button.png" alt="">
+                        </div> -->
+                    </a>
+                </div>
         </div>
-        <img id="img-footer" src="../images/template1/img-footer.png" alt="">
+        <img id="img-footer" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template1/img-footer.png" alt="">
         <div class="footer-content">
             <p class="text-footer">＜Kampoful Life Newsについて＞</p>
             <p class="text-footer">このメールは、クラシエの Kampoful Life 会員登録時に「Kampoful Life会員規約」にご同意いただいた方を対象にお送りしております。今後も「Kampoful Life News」として、お得な情報などを不定期に配信させていただきます。</p>

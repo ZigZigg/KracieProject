@@ -7,7 +7,7 @@
     <title>【プレゼントあり】豪華クラシエ商品詰め合わせ！｜『女性の抜け毛改善法』『おなかの冷え対策』他- 2月号 Kampoful Life メールマガジン♪</title>
     <!-- <link href="../css/styles.css" rel="stylesheet" type="text/css" /> -->
     <!-- <link href="../css/style-template-2.css" rel="stylesheet" type="text/css" /> -->
-    <style>
+    <style type="text/css">
 *,
 *::after,
 *::before {
@@ -79,6 +79,13 @@ header img{
 }
 #top-content__header-text .text-bold--small{
     font-size: 24px;
+}
+#pr-image-1{
+    background-image: url('../images/template2/pr-image.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 160px;
 }
 .text-content{
     font-size: 24px;
@@ -180,7 +187,6 @@ header img{
 }
 #img-brand{
     width: 100%;
-    height: 550px;
     margin-bottom: 30px;
 }
 .dialog-container{
@@ -195,43 +201,32 @@ header img{
     float: right;
 }
 .dialog-box{
-    padding: 10px 12px;
-    border: 2px solid #f16120;
-    border-radius: 20px;
-    position: relative;
     margin-top: 30px;
-    text-align: center;
-    max-width: 445px;
-    width: 400px;
 }
-.dialog-box::before{
-    content: '';
-    position: absolute;
-    right: -30px;
-    top: 50%;
-    height: 15px;
-    background-color: #f16120;
-    width: 30px;
-    border-left: #fff;
-    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
-    transform: translateY(-7.5px);
-}
+
 .padding-bottom{
     padding:0 40px
 }
-.dialog-box::after{
-    content: '';
-    position: absolute;
-    right: -24px;
-    background-color: #fff;
-    top: 50%;
-    height: 12px;
-    width: 30px;
-    border-left: #fff;
-    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
-    transform: translateY(-6px);
+#dialog-box-1{
+    background-image: url('../images/template2/dialog-box-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 310px;
 }
-
+#dialog-box-2{
+    background-image: url('../images/template2/dialog-image-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 200px;
+}
+#dialog-box-1 > div{
+    width: 70%;
+    height: 100%;
+    float: right;
+    padding: 20px 10px;
+}
 .link-content{
     font-size: 26px;
     font-weight: bold;
@@ -353,7 +348,6 @@ header img{
     width: 100%;
     height: 140px;
     border-radius: 8px;
-    position: relative;
     box-shadow: 5px 7px 6px -3px rgba(0,0,0,0.7)
 }
 .btn--gradient::before{
@@ -412,16 +406,9 @@ header img{
     color: #ff0072;
     font-weight: bold;
     position: relative;
+    border-bottom: 2px solid #ff0072
 }
-#flex-content-2::after{
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ff0072;
-}
+
 #orange-text{
     font-size: 20px; 
     font-weight: bold; 
@@ -566,22 +553,10 @@ header img{
     text-align: center;
 }
 #template-2 .dialog-container__right .dialog-box{
-    float: right;
-    max-width: 390px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 20px;
 }
-#template-2 .dialog-container__right .dialog-box::before{
-    left: -30px;
-}
-#template-2 .dialog-container__right .dialog-box::after{
-    left: -24px;
-}
-#template-2 .dialog-container__right .dialog-box::before, #template-2 .dialog-container__right .dialog-box::after{
-    clip-path: polygon(0 50%, 100% 100%, 100% 0%, 0 50%);
-}
+
 .flex-content__unline{
     display: flex;
     flex-direction: row;
@@ -603,6 +578,7 @@ header img{
     border-radius: 6px;
     max-width: 140px;
     float: right;
+    margin-right: 20px
 }
 #person-hand{
     width: 150px;
@@ -640,10 +616,7 @@ header img{
     width: 80px;
     z-index: 1;
 }
-#template-2 .btn--gradient__image{
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 
 @media screen and (max-width:600px){
     header{
@@ -668,7 +641,7 @@ header img{
         padding: 13px 9px;
     }
     .text-small, #top-content__header-text .text-bold--small, .text-content{
-        font-size: 15.6px;
+        font-size: 14.6px;
     }
     .top-content__main-text .text-content::after, .top-content__main-text .flex-content-1::after{
         bottom: -2.6px;
@@ -744,8 +717,7 @@ header img{
     .dialog-box{
         padding: 6.5px 7.8px;
         border-radius: 13px;
-        margin-top: 19.5px;
-        max-width: 260px;        
+        margin-top: 19.5px;     
     }
     .dialog-box::before{
         right: -19.5px;
@@ -760,7 +732,7 @@ header img{
         transform: translateY(-4px);
     }
     .link-content, .box-content__text{
-        font-size: 17px;
+        font-size: 16px;
     }
     .dialog-container #person-02{
         width: 63px;
@@ -842,6 +814,9 @@ header img{
     .btn--gradient a{
         font-size: 15.8px;
     }
+    #pr-image-1{
+        height: 94px;
+    }
     #img-arrow{
         width: 28.6px;
         height: 28.6px;
@@ -874,7 +849,6 @@ header img{
         margin-bottom: 6.5px;
     }
     #img-brand{
-        height: 375.5px;
         margin-bottom: 19.5px;
     }
     .padding-bottom{
@@ -917,11 +891,6 @@ header img{
         right: -3.25px;
         bottom: -3.25px;
     }
-
-    #template-2 .dialog-container__right .dialog-box{
-        max-width: 253.5px;
-        margin-bottom: 13px;
-    }
     #template-2 .dialog-container__right .dialog-box::before{
         left: -19.5px;
     }
@@ -935,7 +904,7 @@ header img{
         margin-bottom: 4.5px;
     }
     .text-bold--mediumXL{
-        font-size: 18.2px;
+        font-size: 16.2px;
     }
     .btn__small--orange{
         background-color: #ff9900;
@@ -957,6 +926,9 @@ header img{
     .content-image{
         margin-top: 13px;
     }
+    #dialog-box-1 > div{
+        padding: 10px 10px;
+    }
     #template-2 .dialog-container__left .dialog-box::before{
         right: -20.15px;
         height: 19.5px;
@@ -968,7 +940,10 @@ header img{
         height: 19.5px;
         transform: translateY(-3.9px);
     }
-
+    #dialog-box-1{
+        width: 100%;
+        height: 190px;
+    }
     #person-2-2{
         width: 82px;
         height: 89px;
@@ -976,110 +951,145 @@ header img{
         right: 0;
         top: 30px;
     }
+
     
 }
-              
+@media screen and (max-width: 320px){
+    .text-content{
+        font-size: 11.6px;
+    }
+    .link-content{
+        font-size: 13px
+    }
+    .text-bold--mediumXL{
+        font-size: 11.2px;
+    }
+    .btn__small--orange{
+        padding: 1px 9.75px;
+    }
+    #dialog-box-1 > div{
+        padding: 4px 10px;
+    }
+    #flex-content-2{
+        font-size: 12.3px;
+    }
+    .content-image{
+        margin-top:0px
+    }
+    .dialog-container{
+        margin-bottom: 0px
+    }
+    #template-2 .dialog-container__right .dialog-box{
+        margin-bottom: 0px
+    }
+    #top-content__header-text .text-bold--small{
+        font-size: 13.6px
+    }
+}              
     </style>
 </head>
 <body>
     <div id="template-2" class="container">
         <header>
-            <img src="../images/template2/logo.jpg" alt="">
+            <img src="http://test.digishoku.co.jp/kracie/crm/mail/images/template2/logo.jpg" alt="">
         </header>
         <div class="line--yellow"></div>
         <div class="top-content">
             <div id='top-content__header-text'>
-                
+                <img id="tano" src="http://test.digishoku.co.jp/kracie/crm/mail/images/tano.png" alt="">
                 <p class="text-bold--small">カンポフルライフ会員サービス！ご紹介メール①</p>
             </div>
             <div  id='top-content__main'>
-                <div class="top-content__main-text">
-                    <p style="margin-bottom: 20px;" class="text-bold--small">カンポフルライフ会員サービスにようこそ！</p>
+                <div  class="top-content__main-text">
+                    <img style="width: 100%" src="../images/template2/pr-image.png" alt="">
+                    <!-- <p style="margin-bottom: 20px;" class="text-bold--small">カンポフルライフ会員サービスにようこそ！</p>
                     <p class="text-bold--small">わたしたちが、会員サービスを</p>
                     <p class="text-bold--small">3回に渡ってご案内します！</p>
                     <img id="img-person-2-1" src="../images/template2/person-2-1.png" alt="">
-                    <img id="img-person-2-2" src="../images/template2/person-2-2.png" alt="">
+                    <img id="img-person-2-2" src="../images/template2/person-2-2.png" alt=""> -->
                 </div>
                 <div class="btn__radius--orange">
                     <p class="text-bold--medium">会員サービスその１</p>
                 </div>
                 <div style="clear: both;" class="dialog-container dialog-container__right">
-                    <div class="dialog-box">
-                        <p>
-                            <a class="link-content" href="">サイトを楽しむだけ</a>
-                            <span class="text-content">でたまる</span>
-                        </p>
-                        <div class="flex-content__unline">
-                            <img id="konban" src="../images/template2/img-text-01.png" alt="">
-                            <span class="text-content">を</span>
+                    <div id="dialog-box-1" class="dialog-box">
+                        <div>
+                            <p>
+                                    <a class="link-content" href="">サイトを楽しむだけ</a>
+                                    <span class="text-content">でたまる</span>
+                                </p>
+                                <div class="flex-content__unline">
+                                    <img id="konban" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template2/img-text-01.png" alt="">
+                                    <span class="text-content">を</span>
+                                </div>
+                                <p class="text-content">多くためてくれた方に</p>
+                                <p class="text-bold--mediumXL">選べる電子マネーギフトを</p>
+                                <p class="text-bold--mediumXL">プレゼントしています！</p>
+                                <div style="width: 100%;">
+                                    <div class="btn__small--orange">
+                                        <span id="orange-text" >要ログイン</span>
+                                    </div>
+                                </div>
                         </div>
-                        <p class="text-content">多くためてくれた方に</p>
-                        <p class="text-bold--mediumXL">選べる電子マネーギフトを</p>
-                        <p class="text-bold--mediumXL">プレゼントしています！</p>
-                        <div style="width: 100%;">
-                            <div class="btn__small--orange">
-                                <span id="orange-text" >要ログイン</span>
-                            </div>
-                        </div>
-
                     </div>
-                    <img id="person-hand" src="../images/template2/person-2-3.png" alt="">
+                    <!-- <img id="person-hand" src="../images/template2/person-2-3.png" alt=""> -->
                 </div>
                 <div class="content-image" style="clear: both;">
-                    <img id="cat" src="../images/template2/cat.png" alt="">
+                    <img id="cat" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template2/cat.png" alt="">
                 </div>
                 <div style="text-align: center; margin-top: 30px;">
                     <p class="text-bold--small">漢方の考え方で、あなたの美と健康の</p>
                     <p class="text-bold--small">お手伝いをするのが</p>
                     <div class="flex-content__unline">
-                        <img  id="konban" src="../images/template2/img-text-01.png" alt="">
+                        <img  id="konban" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template2/img-text-01.png" alt="">
                         <span class="text-bold--small">です。</span>
                     </div>
                 </div>
                 <div class="dialog-container dialog-container__left">
-                    <div class="dialog-box">
-                        <div class="flex-content__unline">
-                            <img id="konban" src="../images/template2/img-text-01.png" alt="">
-                            <span class="text-content">は、</span>
-                        </div>
-                        <p class="text-content">カンポフルライフにログインして</p>
-                        <p class="text-content">記事をよんだりするだけで</p>
-                        <p class="text-content">たまるんですよ。</p>
+                    <div  class="dialog-box">
+                        <img style="width: 100%" src="../images/template2/dialog-image-2-2.png" alt="">
+                        <!-- <div>
+                            <div class="flex-content__unline">
+                                    <img id="konban" src="../images/template2/img-text-01.png" alt="">
+                                    <span class="text-content">は、</span>
+                            </div>
+                            <p class="text-content">カンポフルライフにログインして</p>
+                            <p class="text-content">記事をよんだりするだけで</p>
+                            <p class="text-content">たまるんですよ。</p>
+                        </div> -->
+
                     </div>
-                    <img id="person-2-2" src="../images/template2/person-2-2.png" alt="">
+                    <!-- <img id="person-2-2" src="../images/template2/person-2-2.png" alt=""> -->
                 </div>
-                <div class="btn--gradient btn--gradient__image" style="margin-top: 40px;">
+                <div  >
                     <a href="#">
-                        <img id="btn-image-1" src="../images/template2/btn-image-1.png" alt="">
-                        <div style="text-align: center; flex-direction: column; position: relative;" class="btn--content">
+                        <img style="width: 100%" src="../images/template2/btn-gradient-1.png" alt="">
+                        <!-- <div style="text-align: center; flex-direction: column; position: relative;" class="btn--content">
                             <p>さぁ、まずはマイページにログインして</p>
                             <p>たまったカンポフル</p>
                             <p>スコアを確認してみよう</p>
                             <img style="position: absolute; right: 0; bottom:5px" id="img-arrow" src="../images/template2/arrow-button.png" alt=""> 
-                        </div>
+                        </div> -->
                     </a>
                 </div>
-                <div style="text-align: center; margin-top: 30px;">
+                <div style="text-align: center; margin-top: 10px;">
                     <a  id="flex-content-2" href="">
                         <span>もっと、カンポフルスコアについて知りたい！</span>
-                        <img id="arrow-pink" src="../images/template2/arrow-link.png" alt="">
+                        <img id="arrow-pink" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template2/arrow-link.png" alt="">
                     </a>
                 </div>
 
             </div>
         </div>    
         <div class="logo-content">
-            <img id="img-brand"  src="../images/template2/brand.png" alt="">
-            <div class="btn--gradient">
+            <img id="img-brand"  src="http://test.digishoku.co.jp/kracie/crm/mail/images/template2/brand.png" alt="">
+            <div >
                 <a href="#">
-                    <div class="btn--content">
-                        <span>今すぐ、カンポフルスコアをためる！</span>
-                        <img id="img-arrow" src="../images/template2/arrow-button.png" alt=""> 
-                    </div>
+                    <img style="width: 100%" src="../images/template2/button-2-2.png" alt="">
                 </a>
             </div>
         </div>
-        <img id="img-footer" src="../images/template2/img-footer.png" alt="">
+        <img id="img-footer" src="http://test.digishoku.co.jp/kracie/crm/mail/images/template2/img-footer.png" alt="">
         <div class="footer-content">
             <p class="text-footer">＜Kampoful Life Newsについて＞</p>
             <p class="text-footer">このメールは、クラシエの Kampoful Life 会員登録時に「Kampoful Life会員規約」にご同意いただいた方を対象にお送りしております。今後も「Kampoful Life News」として、お得な情報などを不定期に配信させていただきます。</p>
